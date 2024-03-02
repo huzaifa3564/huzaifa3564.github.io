@@ -21,11 +21,7 @@ header{
 header h1 {
     color: #ffd54c;
     font-size: min(20vw, 2em);
-}
-
-header img {
-    width: 40px;
-    padding: 1em;
+    padding-left: 10rem;
 }
 
 nav {
