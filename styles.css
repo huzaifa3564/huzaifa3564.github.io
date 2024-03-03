@@ -1,97 +1,76 @@
 /* RESET */
-body, h1 {
+body {
     margin: 0;
-    padding: 0;
-    font-family: Ubuntu, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-family: Ubuntu;
 }
 
 /* HEADER */
-header{
-    width: 100%;
-    height: 50px;
-    background-color: teal;
+header {
+    background-color: #1A1A32;
+    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-}
-
-header h1 {
-    color: #ffd54c;
-    font-size: min(20vw, 2em);
-    padding-left: 1rem;
 }
 
 nav {
-    width: 50%;
-    max-width: 300px;
+    display: flex;
     height: 50px;
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-inline-start: 0;
-    margin-block: 0;
-    height: 100%;
 }
 
-nav ul li {
-    color: #dfdfe2;
-    margin: 0 0.2rem;
-    padding: 0.2rem;
-    display: block;
-}
-
-nav ul li:hover {
-    background-color: #dfdfe2;
-    color: teal;
-    cursor: pointer;
+nav li {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 nav a {
-    color: inherit;
+    color: white;
     text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #1A1A32;
 }
 
 /* MAIN */
-main {
-    padding-top: 50px;
+body {
+    color: #1A1A32;
 }
 
-.bio {
-    margin: 10px auto;
-    width: 90%;
-    max-width: 1000px;
-    text-align: left;
+#main {
+    padding: 0 10%;
 }
 
-.projects {
-    margin: 10px auto;
-    width: 90%;
-    max-width: 1000px;
-    text-align: left;
+.txt-normal {
+    font-size: 18px;
 }
 
 .projects a {
-    text-decoration: none;
-    color: black;
+    color: #1A1A32;
 }
 
 .projects a:hover {
-    color: teal;
+    font-weight: bold;
 }
 
 /* DIVIDERS */
 .divider-medium {
-    border-bottom: 2px solid #ffd54c;
-    margin: 80px 0 20px 0;
+    border-bottom: 2px solid #1A1A32;
+    margin: 0 -5% 0 -5%;
 }
 
+/* ANIMATIONS */
 /* ANIMATIONS */
 @keyframes waving-hand {
     0% {transform: rotate(0deg);}
@@ -108,4 +87,5 @@ main {
     display: inline-block;
     animation: waving-hand 2.5s infinite;
     transform-origin: 70% 70%;
+    font-size: 24px;
 }
